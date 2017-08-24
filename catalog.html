@@ -16,7 +16,7 @@
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 				<ul class="user-navigation">
-					<li class="shopping-basket">Корзина</li>
+					<li class="shopping-basket"> <a href="#">Корзина</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -42,16 +42,16 @@
 						<legend>Сетка:</legend>
 						<ul class="filter-form-grid">
 				 			<li class="filter-option">
-								<input class="visualy-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" checked>
-								Адаптивная
+								<input id="radio-adaptive" class="visualy-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" checked>
+								<label for="radio-adaptive">Адаптивная</label>
 							</li>
 							<li class="filter-option">
-								<input class="visualy-hidden filter-input filter-input-radio" type="radio" name="grid" value="fix">
-								Фиксированная
+								<input id="radio-fix" class="visualy-hidden filter-input filter-input-radio" type="radio" name="grid" value="fix">
+								<label for="radio-fix">Фиксированная</label>
 							</li>
 							<li class="filter-option">
-								<input class="visualy-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber">
-								Резиновая
+								<input id="radio-rubber" class="visualy-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber">
+								<label for="radio-rubber">Резиновая</label>
 							</li>
 						</ul>
 					</fieldset>
@@ -59,24 +59,24 @@
 						<legend>Особенности:</legend>
 						<ul class="filter-form-features">
 							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
-								Слайдер
+								<input id="checkbox-slider" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
+								<label for="checkbox-slider">Слайдер</label>
 							</li>
 							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features" >
-								Блок преимуществ
+								<input id="checkbox-feature" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features" >
+								<label for="checkbox-feature">Блок преимуществ</label>
 							</li>
 							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
-								Новости
+								<input id="checkbox-news" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
+								<label for="checkbox-news">Новости</label>
 							</li>
 							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" >
-							 	Галерея
+								<input id="checkbox-gallery" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" >
+							 	<label for="checkbox-gallery">Галерея</label>
 							</li>
 							<li class="filter-option">
-							 	<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="shoping-basket" >
-							 	Корзина
+							 	<input id="checkbox-shopping-basket" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="shopping-basket" >
+							 	<label for="checkbox-shopping-basket">Корзина</label>
 							</li>
 						</ul>
 					</fieldset>
@@ -150,7 +150,7 @@
 				<p>191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
 				<p>тел. +7(812)275-75-75</p>
 				<button type="button">Напишите нам</button>
-				<p><img src="img/map.jpg" width="1440" height="416" alt="Интерактивная карта проезда"></p>
+				<p><img src="img/map.jpg" width="1440" height="416" alt="191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8"></p>
 			</section>
 			<section class="social">
 				<h2 class="visually-hidden">NERDS в соцсетях</h2>
@@ -182,7 +182,7 @@
 				</ul>
 				<button type="submit">Отправить</button>
 			</form>
-			<span class="modal-close">x</span>
+			<button class="modal-close">Закрыть</button>
 		</section>
 	</body>
 </html>
