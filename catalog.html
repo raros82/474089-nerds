@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Нёрдс</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
@@ -46,7 +48,7 @@
 								<label for="radio-adaptive">Адаптивная</label>
 							</li>
 							<li class="filter-option">
-								<input id="radio-fix" class="visualy-hidden filter-input filter-input-radio" type="radio" name="grid" value="fix">
+								<input id="radio-fix" class="visualy-hidden filter-input filter-input-radio" type="radio" name="grid" value="fix" disabled>
 								<label for="radio-fix">Фиксированная</label>
 							</li>
 							<li class="filter-option">
@@ -71,7 +73,7 @@
 								<label for="checkbox-news">Новости</label>
 							</li>
 							<li class="filter-option">
-								<input id="checkbox-gallery" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" >
+								<input id="checkbox-gallery" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" disabled>
 							 	<label for="checkbox-gallery">Галерея</label>
 							</li>
 							<li class="filter-option">
@@ -80,7 +82,7 @@
 							</li>
 						</ul>
 					</fieldset>
-					<button type="submit" class="filter-button button">Показать</button> 
+					<button type="submit" class="filter-button">Показать</button> 
 				</form>
 			</section>
 			<section class="display-method">
@@ -100,46 +102,58 @@
 				<ul class="templates-list">
 					<li class="template-item template-item-sedona">
 						<p><img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон Sedona"></p>
-						<b>SEDONA</b>
-						<p>Информационный сайт для туристов</p>
-						<a class="button" href="#">9 900 руб.</a>
-					</li>
+						<div class="templates-hover-info">	
+							<b>SEDONA</b>
+							<p>Информационный сайт для туристов</p>
+							<a class="button" href="#">9 900 руб.</a>
+						</div>
+					</li>	
 					<li class="template-item template-item-pink">
 						<p><img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон Pink"></p>
-						<b>PINK APP</b>
-						<p>Продуктовый лендинг приложения для iOS и Android</p>
-						<a class="button" href="#">9 900 руб.</a>
+						<div class="templates-hover-info">	
+							<b>PINK APP</b>
+							<p>Продуктовый лендинг приложения для iOS и Android</p>
+							<a class="button" href="#">9 900 руб.</a>
+						</div>
 					</li>
 					<li class="template-item template-item-barbershop">
 						<p><img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон барбершоп"></p>
-						<b>BARBERSHOP</b>
-						<p>Сайт салона красоты. Для мужчин, да.</p>
-						<a class="button" href="#">9 900 руб.</a>
+						<div class="templates-hover-info">	
+							<b>BARBERSHOP</b>
+							<p>Сайт салона красоты. Для мужчин, да.</p>
+							<a class="button" href="#">9 900 руб.</a>
+						</div>
 					</li>
 					<li class="template-item template-item-mishka">
 						<p><img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон MISHKA"></p>
-						<b>MISHKA</b>
-						<p>Интернет-магазин вязаных игрушек</p>
-						<a class="button" href="#">9 900 руб.</a>
+						<div class="templates-hover-info">	
+							<b>MISHKA</b>
+							<p>Интернет-магазин вязаных игрушек</p>
+							<a class="button" href="#">9 900 руб.</a>
+						</div>
 					</li>
 					<li class="template-item template-item-a-plus">
 						<p><img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон A-PLUS"></p>
-						<b>A PLUS</b>
-						<p>Лендинг курсов повышения квалификации</p>
-						<a class="button" href="#">9 900 руб.</a>
+						<div class="templates-hover-info">	
+							<b>A PLUS</b>
+							<p>Лендинг курсов повышения квалификации</p>
+							<a class="button" href="#">9 900 руб.</a>
+						</div>
 					</li>
 					<li class="template-item template-item-kvast">
 						<p><img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон KVAST"></p>
-						<b>КВАСТ</b>
-						<p>Промо-сайт производителя крафтового кваса</p>
-						<a class="button" href="#">9 900 руб.</a>
+						<div class="templates-hover-info">	
+							<b>КВАСТ</b>
+							<p>Промо-сайт производителя крафтового кваса</p>
+							<a class="button" href="#">9 900 руб.</a>
+						</div>
 					</li>
 				</ul>
 				<ul class="pagination-list">
-					<li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-					<li class="pagination-item"><a href="#">2</a></li>
-					<li class="pagination-item"><a href="#">3</a></li>
-					<li class="pagination-item"><a href="#">Следующая</a></li>
+					<li class="pagination-item pagination-item-current"><a class="filter-button" href="#">1</a></li>
+					<li class="pagination-item"><a class="filter-button" href="#">2</a></li>
+					<li class="pagination-item"><a class="filter-button" href="#">3</a></li>
+					<li class="pagination-item"><a class="filter-button" href="#">Следующая</a></li>
 				</ul>
 			</section>
 		</main>
@@ -149,15 +163,15 @@
 				<p class="emphasized">NERDS DESIGN STUDIO</p>
 				<p>191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
 				<p>тел. +7(812)275-75-75</p>
-				<button type="button">Напишите нам</button>
+				<button class="button" type="button">Напишите нам</button>
 				<p><img src="img/map.jpg" width="1440" height="416" alt="191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8"></p>
 			</section>
 			<section class="social">
 				<h2 class="visually-hidden">NERDS в соцсетях</h2>
 				<ul class="social-list">
-					<li class="social-item social-item-vk"><a href="#">nerds-VK</a></li>
-					<li class="social-item social-item-fb"><a href="#">nerds-FB</a></li>
-					<li class="social-item social-item-INS"><a href="#">nerds-INSTAGRAM</a></li>
+					<li class="social-item social-item-vk"><a href="#">VK</a></li>
+					<li class="social-item social-item-fb"><a href="#">FB</a></li>
+					<li class="social-item social-item-INS"><a href="#">INSTA</a></li>
 				</ul>
 				<b>Давайте дружить, это выгодно!</b>
 				<p>Скидка 10% для друзей из социальных сетей!</p>
@@ -180,7 +194,7 @@
 						<textarea id="modal-write-us-form-text" rows="5" cols="50">В свободной форме</textarea>
 					</li>
 				</ul>
-				<button type="submit">Отправить</button>
+				<button class="button" type="submit">Отправить</button>
 			</form>
 			<button class="modal-close">Закрыть</button>
 		</section>

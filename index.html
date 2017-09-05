@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Нёрдс</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
@@ -60,7 +62,7 @@
 						<h3>Презентации</h3>
 						<img src="img/presentation.jpg" width="300" height="146" alt="Презентации">
 						<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-						<p><a class="button button-order-app" href="#">Заказать</a></p>
+						<p><a class="button button-order-presentation" href="#">Заказать</a></p>
 					</li>
 				</ul>
 			</section>
@@ -69,7 +71,7 @@
 				<b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
 				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
 				<p class="emphasized">Выполняем заказы на разработку</p>
-				<ul>
+				<ul class="about-us-list">
 					<li>Веб-сайты любой сложности</li>
 					<li>Мобильных приложений для iOS и Android</li>
 					<li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -77,11 +79,12 @@
 			</section>
 			<section class="statistics">
 				<h2 class="visually-hidden">Наша статистика</h2>
+				<img src="img/nerds-logo-decoration.jpg" widht="360" height="208" alt="logo nerds">
 				<p class="emphasized">С 2004 года любим точность во всем:</p>
 				<ul class="statistic-list">
-					<li><span class="statistic-number">146</span><span class="percent">%</span> Уровень самооотдачи</li>
-					<li><span class="statistic-number">100</span><span class="percent">%</span> Соблюдение сроков</li>
-					<li><span class="statistic-number">50</span><span class="percent">%</span> Минимальная предоплата</li>	
+					<li><span class="statistic-number">146<span class="percent">%</span></span> Уровень самооотдачи</li>
+					<li><span class="statistic-number">100<span class="percent">%</span></span> Соблюдение сроков</li>
+					<li><span class="statistic-number">50<span class="percent">%</span></span> Минимальная предоплата</li>	
 				</ul>
 			</section>
 			<section class="selected-works">
@@ -108,15 +111,15 @@
 				<p class="emphasized">NERDS DESIGN STUDIO</p>
 				<p>191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
 				<p>тел. +7(812)275-75-75</p>
-				<button type="button">Напишите нам</button>
+				<button class="button" type="button">Напишите нам</button>
 				<p><img src="img/map.jpg" width="1440" height="416" alt="191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8"></p>
 			</section>
 			<section class="social">
 				<h2 class="visually-hidden">NERDS в соцсетях</h2>
 				<ul class="social-list">
-					<li class="social-item social-item-vk"><a href="#">nerds-VK</a></li>
-					<li class="social-item social-item-fb"><a href="#">nerds-FB</a></li>
-					<li class="social-item social-item-INS"><a href="#">nerds-INSTAGRAM</a></li>
+					<li class="social-item social-item-vk"><a href="#">VK</a></li>
+					<li class="social-item social-item-fb"><a href="#">FB</a></li>
+					<li class="social-item social-item-INS"><a href="#">INSTA</a></li>
 				</ul>
 				<b>Давайте дружить, это выгодно!</b>
 				<p>Скидка 10% для друзей из социальных сетей!</p>
@@ -139,7 +142,7 @@
 						<textarea id="modal-write-us-form-text" rows="5" cols="50">В свободной форме</textarea>
 					</li>
 				</ul>
-				<button type="submit">Отправить</button>
+				<button class="button" type="submit">Отправить</button>
 			</form>
 			<button class="modal-close">Закрыть</button>
 		</section>
