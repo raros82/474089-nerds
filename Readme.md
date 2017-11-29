@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Роман Рацеев](https://up.htmlacademy.ru/htmlcss/18/user/474089).
-* Наставник: [Евгений Болтян](https://up.htmlacademy.ru/htmlcss/18/user/83202).
+* Студент: [Роман Рацеев](https://up.htmlacademy.ru/htmlcss/19/user/474089).
+* Наставник: без наставника.
 
 ---
 
